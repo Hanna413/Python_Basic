@@ -1,14 +1,5 @@
-gain = int(input('Enter your gain: '))
-cost = int(input('Enter your costs: '))
-
-if gain > cost:
-    print('Gain is more than costs! :)')
-    profit = gain - cost
-    profitability = profit / gain
-    print(f'Profitability of your business is {profitability}.')
-    number_employee = int(input('Enter number of employees: '))
-    profit_per_employee = profit / number_employee
-    print(f'Profit per each employee is {profit_per_employee}.')
-else:
-    print('Gain is less than costs... :(')
-
+my_list = [7, 5, 3, 3, 2]
+grade = int(input('Enter grade: '))
+my_list.append(grade)
+my_list.sort(reverse=True)
+print(my_list)

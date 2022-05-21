@@ -1,12 +1,3 @@
-number = int(input('Enter your number: '))
-
-max_number = 0
-
-while number != 0:
-    digit = number % 10
-    number = number // 10
-    if digit > max_number:
-        max_number = digit
-
-
-print(f'Maximum digit from your number is: {max_number} ')
+user_words = input('Enter words separated by spaces: ').split(' ')
+for ind, word in enumerate(user_words):
+    print(ind, word[:10])
